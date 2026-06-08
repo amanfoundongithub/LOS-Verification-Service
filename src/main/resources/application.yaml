@@ -3,8 +3,11 @@ spring:
     name: verification_service
 
 tesseract:
-  datapath: "src/main/resources/tessdata"
-  language: "eng"
+  data:
+    path: "src/main/resources/tessdata"
+    language: "eng"
+  jna:
+    path: "/opt/homebrew/lib" # Apple M series specific
 
 server:
   port: 6400
