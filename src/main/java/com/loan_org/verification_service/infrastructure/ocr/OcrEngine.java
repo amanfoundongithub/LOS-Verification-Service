@@ -1,4 +1,4 @@
-package com.loan_org.verification_service.core.ocr;
+package com.loan_org.verification_service.infrastructure.ocr;
 
 import java.awt.image.BufferedImage;
 

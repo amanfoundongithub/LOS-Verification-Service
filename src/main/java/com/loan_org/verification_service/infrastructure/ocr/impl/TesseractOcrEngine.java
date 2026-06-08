@@ -1,8 +1,8 @@
-package com.loan_org.verification_service.infrastructure.ocr;
+package com.loan_org.verification_service.infrastructure.ocr.impl;
 
 import com.loan_org.verification_service.api.exception.VerificationErrorCode;
 import com.loan_org.verification_service.api.exception.VerificationException;
-import com.loan_org.verification_service.core.ocr.OcrEngine;
+import com.loan_org.verification_service.infrastructure.ocr.OcrEngine;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import net.sourceforge.tess4j.Tesseract;
