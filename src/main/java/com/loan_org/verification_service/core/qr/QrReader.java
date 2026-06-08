@@ -1,4 +1,4 @@
-package com.loan_org.verification_service.infrastructure.qr;
+package com.loan_org.verification_service.core.qr;
 
 import java.awt.image.BufferedImage;
 import java.util.Optional;
