@@ -1,3 +1,10 @@
 spring:
   application:
     name: verification_service
+
+tesseract:
+  datapath: "src/main/resources/tessdata"
+  language: "eng"
+
+server:
+  port: 6400
