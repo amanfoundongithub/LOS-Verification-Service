@@ -21,7 +21,7 @@ public class TesseractOcrEngine implements OcrEngine {
     @Override
     public String extract(BufferedImage image) {
 
-        log.info("Performing OCR extraction on image...");
+        log.info("Performing Tesseract OCR extraction on image...");
         if(image == null) {
             throw new VerificationException(
                     "Cannot perform OCR processing on a null image",
