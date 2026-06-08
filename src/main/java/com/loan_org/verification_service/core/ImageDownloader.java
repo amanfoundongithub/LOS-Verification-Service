@@ -1,4 +1,4 @@
-package com.loan_org.verification_service.core.http;
+package com.loan_org.verification_service.core;
 
 import java.awt.image.BufferedImage;
 
