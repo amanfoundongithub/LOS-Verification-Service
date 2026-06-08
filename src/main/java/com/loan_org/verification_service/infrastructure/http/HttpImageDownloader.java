@@ -2,7 +2,7 @@ package com.loan_org.verification_service.infrastructure.http;
 
 import com.loan_org.verification_service.api.exception.VerificationErrorCode;
 import com.loan_org.verification_service.api.exception.VerificationException;
-import com.loan_org.verification_service.core.http.ImageDownloader;
+import com.loan_org.verification_service.core.ImageDownloader;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 

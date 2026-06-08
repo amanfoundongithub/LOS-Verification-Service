@@ -1,6 +1,6 @@
 package com.loan_org.verification_service.infrastructure.ocr.impl;
 
-import com.loan_org.verification_service.core.ocr.TextExtractor;
+import com.loan_org.verification_service.core.TextExtractor;
 import com.loan_org.verification_service.infrastructure.ocr.OcrEngine;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

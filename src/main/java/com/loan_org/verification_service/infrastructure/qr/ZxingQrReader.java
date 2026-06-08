@@ -3,7 +3,7 @@ package com.loan_org.verification_service.infrastructure.qr;
 import com.google.zxing.*;
 import com.google.zxing.client.j2se.BufferedImageLuminanceSource;
 import com.google.zxing.common.HybridBinarizer;
-import com.loan_org.verification_service.core.qr.QrReader;
+import com.loan_org.verification_service.core.QrReader;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

@@ -1,6 +1,6 @@
-package com.loan_org.verification_service.core.processor.factory;
+package com.loan_org.verification_service.infrastructure.processor;
 
-import com.loan_org.verification_service.core.processor.DocumentProcessor;
+import com.loan_org.verification_service.core.DocumentProcessor;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
