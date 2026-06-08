@@ -2,7 +2,7 @@ package com.loan_org.verification_service.infrastructure.ocr;
 
 import com.loan_org.verification_service.api.exception.VerificationErrorCode;
 import com.loan_org.verification_service.api.exception.VerificationException;
-import com.loan_org.verification_service.core.ocr.TextExtractor;
+import com.loan_org.verification_service.core.ocr.OcrEngine;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import net.sourceforge.tess4j.Tesseract;
@@ -14,7 +14,7 @@ import java.awt.image.BufferedImage;
 @Slf4j
 @RequiredArgsConstructor
 @Component
-public class TesseractTextExtractor implements TextExtractor {
+public class TesseractOcrEngine implements OcrEngine {
 
     private final Tesseract tesseract;
 
