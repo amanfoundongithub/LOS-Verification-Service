@@ -2,12 +2,42 @@ spring:
   application:
     name: verification_service
 
+  profiles:
+    active: local
+
 tesseract:
   data:
     path: "src/main/resources/tessdata"
     language: "eng"
   jna:
-    path: "/opt/homebrew/lib" # Apple M series specific
+    path: "/opt/homebrew/lib" # Apple M series specific, remove when not needed
 
 server:
   port: 6400
+
+gemini:
+  api-key:
+    header: ${GEMINI_API_KEY_HEADER}
+    value: ${GEMINI_API_KEY}
+  model: ${GEMINI_MODEL}
+  base-url: ${GEMINI_BASE_URL}
+
+  prompts:
+    document-verification: |
+      You are an expert fraud detection and KYC document audit system.
+      Cross-examine this raw OCR string text against the target verified data.
+      Analyze if values match. Forgiving of minor OCR lighting typos.
+
+      You MUST reply strictly using this JSON format schema:
+      {
+          "isMatch": true/false,
+          "confidenceScore": 0-100,
+          "reasoning": "string summary",
+          "flaggedAnomalies": "string anomalies"
+      }
+
+      --- TARGET VERIFIED DATA ---
+      %s
+
+      --- MESSY RAW OCR TEXT ---
+      %s

@@ -1,0 +1,7 @@
+
+# Gemini credentials
+GEMINI_API_KEY: <Your API key here>
+GEMINI_API_KEY_HEADER: "X-goog-api-key"
+
+GEMINI_MODEL: "gemini-2.5-flash"
+GEMINI_BASE_URL: "https://generativelanguage.googleapis.com/v1beta/models/%s:generateContent"
