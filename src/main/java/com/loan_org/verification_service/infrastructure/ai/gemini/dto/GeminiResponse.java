@@ -1,4 +1,4 @@
-package com.loan_org.verification_service.infrastructure.ai.gemini;
+package com.loan_org.verification_service.infrastructure.ai.gemini.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
