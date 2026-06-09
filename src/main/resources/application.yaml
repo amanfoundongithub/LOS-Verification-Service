@@ -15,12 +15,21 @@ tesseract:
 server:
   port: 6400
 
+
+################################################################################
+# Gemini Credentials: These credentials are required for configuring           #
+# Gemini models and the API.                                                   #
+#                                                                              #
+# These are loaded directly from the `application-<environment>.yaml` file     #
+# Ensure that you have the yaml file created in the local.                     #
+#                                                                              #
+################################################################################
 gemini:
+  model: ${GEMINI_MODEL}
+  base-url: ${GEMINI_BASE_URL}
   api-key:
     header: ${GEMINI_API_KEY_HEADER}
     value: ${GEMINI_API_KEY}
-  model: ${GEMINI_MODEL}
-  base-url: ${GEMINI_BASE_URL}
 
   prompts:
     document-verification: |
