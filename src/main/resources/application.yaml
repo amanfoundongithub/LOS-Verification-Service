@@ -1,20 +1,27 @@
+################################################################################
+# Spring application configuration.                                            #
+#                                                                              #
+################################################################################
 spring:
   application:
-    name: verification_service
+    name: ${SPRING_APPLICATION_NAME}
 
   profiles:
-    active: local
+    active: ${SPRING_PROFILE_ACTIVE}
 
+server:
+  port: ${SERVER_PORT}
+
+################################################################################
+# Tesseract OCR configuration.                                                 #
+#                                                                              #
+################################################################################
 tesseract:
   data:
     path: "src/main/resources/tessdata"
     language: "eng"
   jna:
-    path: "/opt/homebrew/lib" # Apple M series specific, remove when not needed
-
-server:
-  port: 6400
-
+    path: "/opt/homebrew/lib"
 
 ################################################################################
 # Gemini Credentials: These credentials are required for configuring           #

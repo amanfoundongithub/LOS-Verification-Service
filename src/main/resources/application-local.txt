@@ -5,3 +5,10 @@ GEMINI_API_KEY_HEADER: "X-goog-api-key"
 
 GEMINI_MODEL: "gemini-2.5-flash"
 GEMINI_BASE_URL: "https://generativelanguage.googleapis.com/v1beta/models/%s:generateContent"
+
+# Environment configurations
+SPRING_APPLICATION_NAME: verification_service
+SPRING_PROFILE_ACTIVE: local
+
+# Server configuration
+SERVER_PORT: 6400
