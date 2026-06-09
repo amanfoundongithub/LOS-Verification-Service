@@ -54,8 +54,8 @@ public class AadhaarProcessor implements DocumentProcessor {
         log.info("QR reading successful! Now validating the details...");
 
         // DEBUG statements; will be removed later
-        responseData.put("rawdata", rawOcrText);
-        responseData.put("qrdata", qrData);
+        responseData.put("rawData", rawOcrText);
+        responseData.put("qrData", qrData);
 
         Map<String, String> targetFields = Map.of(
                 "documentType", "AADHAAR",
