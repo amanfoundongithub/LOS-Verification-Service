@@ -6,8 +6,8 @@ import lombok.Builder;
 @Builder
 public record ProcessRequest(
 
-        @NotBlank(message = "applicationId associated with Loan is required.")
-        String applicationId,
+        @NotBlank(message = "documentId associated with Loan is required.")
+        String documentId,
 
         @NotBlank(message = "storageKey associated with the document is required to be linked to this verification.")
         String storageKey,

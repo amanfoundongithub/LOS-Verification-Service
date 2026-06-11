@@ -4,13 +4,23 @@
 ################################################################################
 spring:
   application:
-    name: ${SPRING_APPLICATION_NAME}
+    name: verification_service
 
   profiles:
-    active: ${SPRING_PROFILE_ACTIVE}
+    active: local
+
+  rabbitmq:
+    host: ${RABBITMQ_HOST}
+    port: ${RABBITMQ_PORT}
+    username: ${RABBITMQ_USERNAME}
+    password: ${RABBITMQ_PASSWORD}
+    listener:
+      simple:
+        retry:
+          enabled: false
 
 server:
-  port: ${SERVER_PORT}
+  port: 6400
 
 ################################################################################
 # Tesseract OCR configuration.                                                 #

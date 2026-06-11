@@ -21,10 +21,10 @@ public class VerificationOrchestrator {
 
     public ProcessResponse handleVerification(ProcessRequest request) {
 
-        log.info("Received request to handle verification of document: {} type: {} for applicationId: {}",
+        log.info("Received request to handle verification of document: {} type: {} for documentId: {}",
                 request.storageKey(),
                 request.documentType(),
-                request.applicationId());
+                request.documentId());
 
         DocumentProcessor processor = processorFactory.getProcessor(request.documentType())
                 .orElseThrow(() -> new VerificationException(
@@ -52,13 +52,13 @@ public class VerificationOrchestrator {
         }
         log.info("Image loaded successfully. Now starting image verification...");
 
-        log.info("Starting image verification of {} for applicationId: {}",
+        log.info("Starting image verification of {} for documentId: {}",
                 request.documentType(),
-                request.applicationId());
+                request.documentId());
         ProcessResponse response = processor.process(image);
-        log.info("Image verification successful for {}. applicationId: {}",
+        log.info("Image verification successful for {}. documentId: {}",
                 request.documentType(),
-                request.applicationId());
+                request.documentId());
         return response;
 
     }

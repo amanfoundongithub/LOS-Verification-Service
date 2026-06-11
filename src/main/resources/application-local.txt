@@ -12,3 +12,9 @@ SPRING_PROFILE_ACTIVE: local
 
 # Server configuration
 SERVER_PORT: 6400
+
+# RabbitMQ configuration
+RABBITMQ_HOST: localhost
+RABBITMQ_PORT: 5672
+RABBITMQ_USERNAME:
+RABBITMQ_PASSWORD:
