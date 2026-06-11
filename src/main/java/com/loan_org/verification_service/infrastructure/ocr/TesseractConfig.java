@@ -1,4 +1,4 @@
-package com.loan_org.verification_service.infrastructure.config;
+package com.loan_org.verification_service.infrastructure.ocr;
 
 import lombok.extern.slf4j.Slf4j;
 import net.sourceforge.tess4j.Tesseract;
