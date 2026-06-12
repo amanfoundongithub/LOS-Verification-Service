@@ -4,7 +4,7 @@
 ################################################################################
 spring:
   application:
-    name: verification_service
+    name: ${SPRING_APPLICATION_NAME}
 
   profiles:
     active: local
@@ -20,7 +20,7 @@ spring:
           enabled: false
 
 server:
-  port: 6400
+  port: ${SERVER_PORT}
 
 ################################################################################
 # Tesseract OCR configuration.                                                 #
